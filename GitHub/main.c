@@ -13,4 +13,34 @@ void main(void)
 {
 	menu();
 
+	switch(opcion)
+	{
+		case 1:
+		{
+			sumar();
+			break;
+		}
+
+		case 2:
+		{
+			restar();
+			break;
+		}
+
+		case 3:
+		{
+			multiplicar();
+		}
+
+		case 4:
+		{
+			dividir();
+		}
+
+		case 0:
+		{
+			exit(-1);
+		}
+	}
+
 }
