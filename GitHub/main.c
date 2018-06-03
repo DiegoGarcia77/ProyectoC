@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "archivo2.h"
+#include "archivo1.c"
 #include <stdlib.h>
 
 void menu()
@@ -14,7 +15,7 @@ void menu()
 
 }
 
-void main(void)
+int main(void)
 {
 	int opcion;
 	scanf("%d",&opcion);
