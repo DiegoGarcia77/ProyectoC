@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <archivo2.h>
+#include "archivo2.h"
 
 function menu()
 {
@@ -17,30 +17,69 @@ void main(void)
 {
 	double opcion;
 	scanf("%lf",&opcion);
+
 	menu();
 
 	switch(opcion)
 	{
 		case 1:
 		{
-			sumar();
+			int num1,num2;
+
+			printf("Introduce un numero: ");
+			scanf("%d",&num1);
+			printf("Introduce otro numero: ");
+			scanf("%d",&num2);
+
+			int resultado=sumar(num1,num2);
+
+			printf("El resultado es%d: ".resultado);
 			break;
 		}
 
 		case 2:
 		{
-			restar();
+			int num1,num2;
+
+			printf("Introduce un numero: ");
+			scanf("%d",&num1);
+			printf("Introduce otro numero: ");
+			scanf("%d",&num2);
+
+			int resultado=restar(num1,num2);
+
+			printf("El resultado es%d: ".resultado);
 			break;
 		}
 
 		case 3:
 		{
-			multiplicar();
+			int num1,num2;
+
+			printf("Introduce un numero: ");
+			scanf("%d",&num1);
+			printf("Introduce otro numero: ");
+			scanf("%d",&num2);
+
+			int resultado=multiplicar(num1,num2);
+
+			printf("El resultado es%d: ",resultado);
+			break;
 		}
 
 		case 4:
 		{
-			dividir();
+			int num1,num2;
+
+			printf("Introduce un numero: ");
+			scanf("%d",&num1);
+			printf("Introduce otro numero: ");
+			scanf("%d",&num2);
+
+			double resultado=dividir(num1,num2);
+
+			printf("El resultado es%lf: ",resultado);
+			break;
 		}
 
 		case 0:
