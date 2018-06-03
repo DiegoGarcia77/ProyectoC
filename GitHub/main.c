@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "archivo2.h"
 
-function menu()
+void menu()
 {
 
 	printf("MENU");
@@ -33,7 +33,7 @@ void main(void)
 
 			int resultado=sumar(num1,num2);
 
-			printf("El resultado es%d: ".resultado);
+			printf("El resultado es%d: ",resultado);
 			break;
 		}
 
@@ -48,7 +48,7 @@ void main(void)
 
 			int resultado=restar(num1,num2);
 
-			printf("El resultado es%d: ".resultado);
+			printf("El resultado es%d: ",resultado);
 			break;
 		}
 
