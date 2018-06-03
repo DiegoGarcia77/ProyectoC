@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "archivo2.h"
+#include <stdlib.h>
 
 void menu()
 {
@@ -15,8 +16,8 @@ void menu()
 
 void main(void)
 {
-	double opcion;
-	scanf("%lf",&opcion);
+	int opcion;
+	scanf("%d",&opcion);
 
 	menu();
 
